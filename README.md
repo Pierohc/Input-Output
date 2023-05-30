@@ -30,6 +30,7 @@
 
 En resumen, esta línea de código define una función llamada "registrar_solo_numeros" que espera recibir una cadena de caracteres como argumento y devuelve un número de punto flotante.
 
-
+-----------------
+El problema de ingresar nota por nota en un programa de python es que puede que aveces me demore en hacer esto, incluso es importante considerar esto si ingreso secuencialmente y rapido todas las notas, igualmente habra un tiempo adicional, por mas minimo que sea. Por ello, es recomendable recurrir al uso de archivos que contengan estos datos, ya que las operaciones de entrada, como ya se mencionó, pueden requerir un tiempo adicional.
 
 
