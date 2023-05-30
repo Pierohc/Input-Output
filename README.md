@@ -33,8 +33,9 @@ En resumen, esta línea de código define una función llamada "registrar_solo_n
 -----------------
 El problema de ingresar nota por nota en un programa de python es que puede que aveces me demore en hacer esto, incluso es importante considerar esto si ingreso secuencialmente y rapido todas las notas, igualmente habra un tiempo adicional, por mas minimo que sea. Por ello, es recomendable recurrir al uso de archivos que contengan estos datos, ya que las operaciones de entrada, como ya se mencionó, pueden requerir un tiempo adicional.
 
+Cabe resaltar que la mayoria de archivos puede abrirse como archivo de texto, la extencion es solo para especeficar su funcion del archivo o sera usado mayormente. Por ejemplo, si abrimos una imagen como archivo de texto veremos todo el codigo de cada pixel.
 
-Para ello se trabajara con archivos de tipo:
+En este caso se trabajara con archivos de tipo:
 
 ## CSV:
 C = Comma
