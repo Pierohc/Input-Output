@@ -23,7 +23,7 @@
  
        def registrar_numeros(texto_ingresado: str)  -> float:
  
- Esta línea de código define una función llamada "registrar_solo_numeros" que toma un argumento llamado "texto_ingresado" de tipo "str" y devuelve un valor de tipo "float". Aquí está la explicación detallada:
+ Esta línea de código define una función llamada "registrar_numeros" que toma un argumento llamado "texto_ingresado" de tipo "str" y devuelve un valor de tipo "float". Aquí está la explicación detallada:
 
 - "(texto_ingresado: str)" es la declaración de parámetro de la función. Indica que la función espera un argumento llamado "numero" de tipo "str", es decir, una cadena de caracteres.
 - "-> float" es una notación de tipo de retorno de la función. Indica que la función devuelve un valor de tipo "float", es decir, un número de punto flotante.
