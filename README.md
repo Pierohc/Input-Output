@@ -44,4 +44,43 @@ S = Separated
 
 V = Values
 
+--------------
+
+       with open("readme.md", "r") as f:
+            contenido = f.read()
+      
+
+El archivo debe estar en el mismo directorio del programa, el "r" indica que el archivo sera solo de lectura
+
+"as f" indica que usaremos el f como puntero para poder trabajar con el archivo
+
+"contenido = f.read()"   leera lo que hay en el archivo 
+
+----
+
+Imprimir tipo de dato:
+
+      print(type(contenido))
+      
+ --------
+ Formas de imprimir:
+ 
+    print(contenido)
+    print(contenido[0])
+    print(contenido[0:3])
+    print(contenido[:3])
+    print(contenido[-3:])
+    
+    
+ ----------
+ Separador: 
+ 
+ 
+          contenido = "Esta es la primera linea\nesta es la segunda linea"
+          lineas = contenido.split("\n")
+          
+          print(lineas[0].upper())
+          print(lineas[1])
+    
+
 
