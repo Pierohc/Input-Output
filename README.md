@@ -82,5 +82,75 @@ Imprimir tipo de dato:
           print(lineas[0].upper())
           print(lineas[1])
     
+    
+    
+    
+    
+    
+ -----------------------
+ 
+ 
+      import numpy as np
+      import time
+
+      if __name__ == '__main__':
+          inicio_total = time.perf_counter()
+
+          inicio_es = time.perf_counter()
+          with open("notas.csv", "r") as f:
+              contenido = f.read()
+          final_es = time.perf_counter()
+
+
+          inicio_cpu = time.perf_counter()
+          filas = contenido.split("\n") #salto de linea
+
+
+          for i in range(1,len(filas)-1):
+
+              dt_str = (filas[i].split(","))
+              dt_float = np.asarray(dt_str, dtype = float)
+
+              promedio_lab = sum(dt_float[1:15])/14
+
+              nota_final = ((promedio_lab*50) + ((dt_float[15])*25) + ((dt_float[16])*25)) /100
+
+              print(f"La nota final del alumno con codigo {int(dt_float[0])} es: {nota_final}")
+
+          final_cpu = time.perf_counter()
+          final_total = time.perf_counter()
+
+          print(f"Tiempo total de ejecucion: {final_total - inicio_total}")
+          print(f"Tiempo total de operaciones E/S: {final_es - inicio_es}")
+          print(f"Tiempo total de procesamiento : {final_cpu - inicio_cpu}")
+          
+          
+ Otras formas de convertir un arreglo tipo string a float o int: 
+ 1:
+ 
+      arreglo_str = ["1.5", "2.3", "4.7", "3.2"]
+
+      arreglo_float = list(map(float, arreglo_str))
+
+      print(arreglo_float)
+      
+      [1.5, 2.3, 4.7, 3.2]
+      
+      
+  2:
+  
+      arreglo_str = ["1.5", "2.3", "4.7", "3.2"]
+
+      arreglo_float = [float(elemento) for elemento in arreglo_str]
+
+      print(arreglo_float)
+      
+      [1.5, 2.3, 4.7, 3.2]
+
+
+
+ 
+ 
+ 
 
 
