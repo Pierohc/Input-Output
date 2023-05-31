@@ -126,6 +126,7 @@ Imprimir tipo de dato:
           
           
  Otras formas de convertir un arreglo tipo string a float o int: 
+ 
  1:
  
       arreglo_str = ["1.5", "2.3", "4.7", "3.2"]
