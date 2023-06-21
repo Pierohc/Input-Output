@@ -56,6 +56,13 @@ El archivo debe estar en el mismo directorio del programa, el "r" indica que el 
 
 "contenido = f.read()"   leera lo que hay en el archivo 
 
+
+-------
+Para editar un archivo:
+
+            with open("pacientes.csv", 'a') as f:
+                                f.write("\n" + data_str )
+
 ----
 
 Imprimir tipo de dato:
